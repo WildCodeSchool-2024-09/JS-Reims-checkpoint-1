@@ -11,6 +11,7 @@
   --textAlign: center;
 }
 
+
 img {
   max-width: 100%;
 }
@@ -25,7 +26,13 @@ p {
 
 .menu {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: var(--gutter);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
 }
 
 .desktop {
@@ -71,6 +78,7 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 800px;
 }
 
 .column:first-of-type {
@@ -108,3 +116,30 @@ p {
 .purple-text {
   color: var(--purple);
 }
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+a{
+  color: var(--purple)
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desktop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description{
+  background-color: var(--purple);
+}
+.skills{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+  
