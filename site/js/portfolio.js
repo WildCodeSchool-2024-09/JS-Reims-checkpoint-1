@@ -12,18 +12,21 @@ function choiceColor() {
 }
 
 function update() {
-	const color = choiceColor();
+	const color = prompt("Enter a color :");
 	const firstName = prompt("Enter your name :");
+
 	const name = document.getElementById("firstname");
 	name.setAttribute("style", "color: white");
 	name.textContent = firstName;
+
 	description.setAttribute("style", `background: ${color}`);
+	document.documentElement.style.cssText = `--lightWildColor: ${color};`;
 }
 
 const description = document.getElementsByClassName("description")[0];
 
 const button = document.createElement("button");
-button.textContent = "Modify text and color";
+button.textContent = "Change name";
 button.addEventListener("click", update);
 
 description.appendChild(button);
