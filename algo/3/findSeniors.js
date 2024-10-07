@@ -27,6 +27,10 @@ const persons = [
 
 function findSeniors(persons) {
   // Your code here !
+  let webdev =["Jane", "Mickael", "Penelope",];
+  console.log(webdev);
+  let data analyst=["Tony", "Homer", "Millie"];
+  console.log (data analyst);
 }
 
 module.exports = findSeniors;
