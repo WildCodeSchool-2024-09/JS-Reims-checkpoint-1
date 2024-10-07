@@ -26,7 +26,7 @@ p {
 
 .menu {
   display: inline-flex;
-  position: fixed;
+  position: absolute;
   right: 50px;
   margin-bottom: var(--gutter);
 }
@@ -35,15 +35,36 @@ p {
   .menu {
     display: flex;
     
+  }
+}
+
+
+@media screen and (min-width:700px) {
+
+.banner { 
   
+  display:flex;
+  flex-direction:center;
+  justify-content: center;
+  justify-items: center;
+  position: absolute;
+ 
+ }
 }
-}
+
 
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
+@media screen and (max-width:700px) {
+ .desktop { display: none;
+
+ }
+}
+
+  
 
 .description {
   color: var(--light);
@@ -66,11 +87,26 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  
 }
 
-.skills--title {
-  margin: calc(var(--gutter) * -2) 0;
-  text-align: var(--textAlign);
+@media screen and (min-width:700px) {
+  .skills { 
+        display: flex;
+        flex-direction:row;
+        margin: 0;
+        justify-content: center;
+        flex-direction: row-reverse;
+        
+
+}
+  
+}
+@media screen and (max-width:700px) {
+        .skills 
+        { display: flexbox;
+          flex-direction: row;}
+  
 }
 
 .column {
@@ -82,6 +118,7 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 400px;
 }
 
 .column:first-of-type {
