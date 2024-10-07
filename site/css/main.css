@@ -70,3 +70,30 @@ button:focus {
 #firstname {
   color: red;
 }
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--lightWildColor);
+  border: 1px solid var(--light);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--light);
+  font-size: 1rem;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.192));
+}
+
+button:hover {
+  background-color: #f6a0ae;
+}
+
+.modify-btn {
+  width: 80%;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid rgba(65, 71, 79, 0.473);
+}
