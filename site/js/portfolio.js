@@ -7,17 +7,24 @@ function changeAvatar() {
 avatar.addEventListener("click", changeAvatar);
 
 
-function replaceName() {
-  const firstName = prompt("Enter your name :");
-  const name = document.getElementById("firstname");
-  name.setAttribute("style", "color: white");
-  name.textContent = firstName;
+function choiceColor() {
+	return prompt("Enter a color :");
+}
+
+function update() {
+	const color = choiceColor();
+	const firstName = prompt("Enter your name :");
+	const name = document.getElementById("firstname");
+	name.setAttribute("style", "color: white");
+	name.textContent = firstName;
+	description.setAttribute("style", `background: ${color}`);
 }
 
 const description = document.getElementsByClassName("description")[0];
 
 const button = document.createElement("button");
 button.textContent = "Modify text and color";
-button.addEventListener("click", replaceName);
+button.addEventListener("click", update);
 
 description.appendChild(button);
+
