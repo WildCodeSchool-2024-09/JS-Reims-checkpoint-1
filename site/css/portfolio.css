@@ -23,20 +23,9 @@ p {
   padding: 0 var(--gutter);
 }
 
-
 .menu {
-  display: inline-flex;
-  position: fixed;
-  right: 50px;
+  display: flex;
   margin-bottom: var(--gutter);
-}
-@media  screen and (min-width: 700px){
-
-  .menu {
-    display: flex;
-    
-  
-}
 }
 
 .desktop {
