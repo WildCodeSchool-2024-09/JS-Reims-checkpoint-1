@@ -58,10 +58,34 @@ p {
 	}
 }
 
+.title-description .desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .desktop {
 	margin: 0;
 	margin-top: calc(var(--gutter) * 5);
 	margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.desktop img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  .desktop img {
+    display: none;
+  }
 }
 
 .description {
